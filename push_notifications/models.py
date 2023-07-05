@@ -38,6 +38,9 @@ class Device(models.Model):
 		),
 		blank=True, null=True
 	)
+	updated_at = models.DateTimeField(
+		verbose_name=_("Update date"), auto_now=True, null=True
+	)
 
 	class Meta:
 		abstract = True
